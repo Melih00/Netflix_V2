@@ -16,7 +16,7 @@ header {
   display: flex;
   width: 100%;
   background-color: #141414;
-  padding: 0px 4.5em 0px 3.4rem;
+  padding: 0px 6em 0px 3.4rem;
   height: 68px;
   justify-content: space-between;
 }
@@ -30,11 +30,11 @@ header {
   justify-content: flex-start;
   cursor: pointer;
 }
-.first_ul{
-    visibility: hidden;
+.first_ul {
+  visibility: hidden;
 }
-#shown_li{
-    visibility: visible;
+#shown_li {
+  visibility: visible;
 }
 #header_ul li {
   margin-left: 1em;
@@ -56,17 +56,21 @@ header {
 }
 .header_right {
   display: flex;
+  position: relative;
   margin: 15px 0px;
   align-items: center;
+  align-content: flex-end;
+  justify-content: center;
+  width: auto;
+}
+.header_right > *{
+  margin-left: 20px;
 }
 .header_right li {
   display: flex;
   align-items: center;
 }
-.header_right > * {
-  margin-left: 2rem;
-}
-.second_ul{
+.second_ul {
   visibility: hidden;
   opacity: 0;
   transition: all 0.3s;
@@ -74,6 +78,7 @@ header {
 
 #img_header_right {
   height: 40px;
+  margin-left: 2.7rem;
 }
 #shown_li:hover ~ ul {
   visibility: visible;
@@ -85,10 +90,16 @@ header {
 .second_ul:hover {
   visibility: visible;
   opacity: 1;
+} 
+#shown_bildirim_li #downsign{padding-left: 9px; transition: all 0.4s;
 }
-#downsign {
-  margin: 0px 0px 0px 12px;
-  transition: all .4s;
+
+#shown_li #downsign {
+  padding-left: 8px;
+  transition: all 0.4s;
+}
+#bell{
+  margin-left: 12px;
 }
 #bell,
 #downsign,
@@ -97,6 +108,61 @@ header {
   cursor: pointer;
   font-size: 1.3rem;
 }
+
+.form{
+  position: relative;
+
+}
+.form input{
+  margin-right: 0px;
+}
+#arama_kapatma{
+  background-color: #141414;
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 150px;
+  left: 0;
+  transition: all .5s;
+  -webkit-transition: all 1.9s;
+  text-align: right;
+  vertical-align: middle;
+  transition-delay: all .5s;
+  
+}
+#glass{
+margin: 10px;
+
+}
+#glass:hover ~ div#arama_kapatma{
+  position: absolute;
+  text-align: center;
+  width: 10px;left: -200px;
+  margin: auto;
+}
+.form{
+  align-items: center;
+  display: flex;
+}
+.form input:focus ~ div#arama_kapatma {
+  position: absolute;
+  text-align: center;
+  width: 10px;
+  left: -200px;
+  margin: auto;
+}
+.form input{
+  margin-right: 10px;
+  padding-top: 2px;
+}
+.form input:hover ~ div#arama_kapatma {
+  position: absolute;
+  text-align: center;
+  width: 10px;
+  left: -200px;
+  margin: auto;
+}
+
 .p {
   color: white;
   font-weight: 100;
@@ -108,6 +174,7 @@ header {
   cursor: pointer;
   transition: all 0.4s;
 }
+
 .ul_images {
   height: 46px;
   padding-left: 5px;
@@ -125,7 +192,7 @@ header {
 }
 .hdr2 ul ul {
   width: 230px;
-  margin-left: -100px;
+  margin-left: -50px;
   background-color: #141414;
 }
 .hdr2 ul ul li {
@@ -165,41 +232,41 @@ header {
   opacity: 19;
   text-decoration: underline;
 }
-.bildirim_ul1{
-    align-self: flex-start;
-    margin-top: 8px;
-    width: 30px;
-    align-items: flex-start;
-    justify-content: space-between;
+.bildirim_ul1 {
+  align-self: flex-start;
+  margin-top: 8px;
+  width: 30px;
+  align-items: flex-start;
+  justify-content: space-between;
 }
-.bildirim_ul2 li{
-    padding: 10px 4px;
-    transition: all .2s;
+.bildirim_ul2 li {
+  padding: 10px 4px;
+  transition: all 0.2s;
 }
-.bildirim_img{
-    height: 70px;
-    margin: 7px ;
-    width: 130px;
+.bildirim_img {
+  height: 70px;
+  margin: 7px;
+  width: 130px;
 }
-.bildirim_ul2{
-    padding-top: 0px;
-    background-color: rgba(0, 0, 0, .81);
-    margin-left: -400px;
-    height: 450px;
-    overflow: auto;
-    visibility: hidden;
-    transition: all .3s;
-    opacity: 0;
-    width: 500px;
+.bildirim_ul2 {
+  padding-top: 0px;
+  background-color: rgba(0, 0, 0, 0.81);
+  margin-left: -400px;
+  height: 450px;
+  overflow: auto;
+  visibility: hidden;
+  transition: all 0.3s;
+  opacity: 0;
+  width: 500px;
 }
-.bildirim_ul2 li:hover{
-    background-color: #141414;
+.bildirim_ul2 li:hover {
+  background-color: #141414;
 }
-.bildirim_ul2 li:hover p{
-    opacity: 1;
+.bildirim_ul2 li:hover p {
+  opacity: 1;
 }
-.p2{
-    color: white;
+.p2 {
+  color: white;
   font-weight: 100;
   font-size: 17px;
   padding: 0px 7px;
@@ -208,16 +275,21 @@ header {
   cursor: pointer;
   transition: all 0.4s;
 }
-.bildirim_tarih{
-    font-size: 12px;
+.bildirim_tarih {
+  font-size: 12px;
 }
-#shown_bildirim_li{
-    padding-bottom: 23px;
+#shown_bildirim_li {
+  padding-bottom: 23px;
 }
-#shown_bildirim_li:hover ~ ul,.bildirim_ul2:hover{
-    visibility: visible;
-    opacity: 1;
+#shown_bildirim_li:hover ~ ul,
+.bildirim_ul2:hover {
+  visibility: visible;
+  opacity: 1;
 }
-#shown_bildirim_li:hover i[id="downsign"]{
-    transform: rotate(180deg);
+#shown_bildirim_li:hover i[id="downsign"] {
+  transform: rotate(180deg);
 }
+
+
+
+
