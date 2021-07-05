@@ -1,0 +1,223 @@
+@font-face {
+  font-family: "get_schwifty";
+  src: url(./fonts/get_schwifty.ttf);
+}
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Netflix Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+  box-sizing: border-box;
+}
+ul {
+  list-style-type: none;
+}
+header {
+  display: flex;
+  width: 100%;
+  background-color: #141414;
+  padding: 0px 4.5em 0px 3.4rem;
+  height: 68px;
+  justify-content: space-between;
+}
+.header_left {
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+#header_netflix {
+  height: 27px;
+  justify-content: flex-start;
+  cursor: pointer;
+}
+.first_ul{
+    visibility: hidden;
+}
+#shown_li{
+    visibility: visible;
+}
+#header_ul li {
+  margin-left: 1em;
+  display: inline;
+  font-weight: 500;
+}
+#header_ul {
+  margin-left: 1.4em;
+}
+#header_ul li a {
+  text-decoration: none;
+  color: white;
+  opacity: 0.87;
+  font-size: 0.9em;
+  transition: all 0.4s;
+}
+#header_ul li a:hover {
+  opacity: 0.5;
+}
+.header_right {
+  display: flex;
+  margin: 15px 0px;
+  align-items: center;
+}
+.header_right li {
+  display: flex;
+  align-items: center;
+}
+.header_right > * {
+  margin-left: 2rem;
+}
+.second_ul{
+  visibility: hidden;
+  opacity: 0;
+  transition: all 0.3s;
+}
+
+#img_header_right {
+  height: 40px;
+}
+#shown_li:hover ~ ul {
+  visibility: visible;
+  opacity: 1;
+}
+.first_ul:hover i {
+  transform: rotate(180deg);
+}
+.second_ul:hover {
+  visibility: visible;
+  opacity: 1;
+}
+#downsign {
+  margin: 0px 0px 0px 12px;
+  transition: all .4s;
+}
+#bell,
+#downsign,
+#glass {
+  color: white;
+  cursor: pointer;
+  font-size: 1.3rem;
+}
+.p {
+  color: white;
+  font-weight: 100;
+  font-size: 14px;
+  padding-left: 10px;
+  position: relative;
+  letter-spacing: 1px;
+  opacity: 0.9;
+  cursor: pointer;
+  transition: all 0.4s;
+}
+.ul_images {
+  height: 46px;
+  padding-left: 5px;
+}
+.hdr2 {
+  height: 200px;
+  align-self: flex-start;
+  margin-top: 0;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+.hdr2 * {
+  margin: 0;
+}
+.hdr2 ul ul {
+  width: 230px;
+  margin-left: -100px;
+  background-color: #141414;
+}
+.hdr2 ul ul li {
+  padding-top: 10px;
+}
+.hdr2 ul ul li:hover {
+  cursor: pointer;
+}
+.hdr2 > ul {
+  width: 100px;
+}
+.users {
+  color: white;
+  font-size: 13px;
+  font-weight: 600;
+  opacity: 0.8;
+  margin-left: 12px;
+}
+.hdr2 ul ul li:hover .users {
+  opacity: 1;
+  text-decoration: underline;
+}
+.profil {
+  padding: 13px 0px 0px 0px;
+}
+.uldown {
+  color: white;
+  opacity: 0.8;
+  font-size: 13px;
+  font-weight: 500;
+  margin: 0px 8px 0px 6px;
+}
+.logout {
+  padding-bottom: 12px;
+}
+.uldown:hover {
+  opacity: 19;
+  text-decoration: underline;
+}
+.bildirim_ul1{
+    align-self: flex-start;
+    margin-top: 8px;
+    width: 30px;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+.bildirim_ul2 li{
+    padding: 10px 4px;
+    transition: all .2s;
+}
+.bildirim_img{
+    height: 70px;
+    margin: 7px ;
+    width: 130px;
+}
+.bildirim_ul2{
+    padding-top: 0px;
+    background-color: rgba(0, 0, 0, .81);
+    margin-left: -400px;
+    height: 450px;
+    overflow: auto;
+    visibility: hidden;
+    transition: all .3s;
+    opacity: 0;
+    width: 500px;
+}
+.bildirim_ul2 li:hover{
+    background-color: #141414;
+}
+.bildirim_ul2 li:hover p{
+    opacity: 1;
+}
+.p2{
+    color: white;
+  font-weight: 100;
+  font-size: 17px;
+  padding: 0px 7px;
+  position: relative;
+  opacity: 0.75;
+  cursor: pointer;
+  transition: all 0.4s;
+}
+.bildirim_tarih{
+    font-size: 12px;
+}
+#shown_bildirim_li{
+    padding-bottom: 23px;
+}
+#shown_bildirim_li:hover ~ ul,.bildirim_ul2:hover{
+    visibility: visible;
+    opacity: 1;
+}
+#shown_bildirim_li:hover i[id="downsign"]{
+    transform: rotate(180deg);
+}
