@@ -9,15 +9,21 @@
 
   box-sizing: border-box;
 }
+body{
+  background-color: #141414;
+}
 ul {
   list-style-type: none;
 }
 header {
   display: flex;
+  position: fixed;
   width: 100%;
+  z-index: 27;
   background-color: #141414;
   padding: 0px 6em 0px 3.4rem;
   height: 68px;
+  top: 0;
   justify-content: space-between;
 }
 .header_left {
@@ -63,7 +69,7 @@ header {
   justify-content: center;
   width: auto;
 }
-.header_right > *{
+.header_right > * {
   margin-left: 20px;
 }
 .header_right li {
@@ -90,15 +96,17 @@ header {
 .second_ul:hover {
   visibility: visible;
   opacity: 1;
-} 
-#shown_bildirim_li #downsign{padding-left: 9px; transition: all 0.4s;
+}
+#shown_bildirim_li #downsign {
+  padding-left: 9px;
+  transition: all 0.4s;
 }
 
 #shown_li #downsign {
   padding-left: 8px;
   transition: all 0.4s;
 }
-#bell{
+#bell {
   margin-left: 12px;
 }
 #bell,
@@ -109,14 +117,13 @@ header {
   font-size: 1.3rem;
 }
 
-.form{
+.form {
   position: relative;
-
 }
-.form input{
+.form input {
   margin-right: 0px;
 }
-#arama_kapatma{
+#arama_kapatma {
   background-color: #141414;
   position: absolute;
   top: 0;
@@ -124,24 +131,23 @@ header {
   height: 100%;
   width: 150px;
   left: 0;
-  transition: all .5s;
+  transition: all 0.5s;
   -webkit-transition: all 1.9s;
   text-align: right;
   vertical-align: middle;
-  transition-delay: all .5s;
-  
+  transition-delay: all 0.5s;
 }
-#glass{
-margin: 10px;
-
+#glass {
+  margin: 10px;
 }
-#glass:hover ~ div#arama_kapatma{
+#glass:hover ~ div#arama_kapatma {
   position: absolute;
   text-align: center;
-  width: 10px;left: -200px;
+  width: 10px;
+  left: -200px;
   margin: auto;
 }
-.form{
+.form {
   align-items: center;
   display: flex;
 }
@@ -152,7 +158,7 @@ margin: 10px;
   left: -200px;
   margin: auto;
 }
-.form input{
+.form input {
   margin-right: 10px;
   padding-top: 2px;
 }
@@ -291,6 +297,177 @@ margin: 10px;
   transform: rotate(180deg);
 }
 
+/* MAIN */
+main {
+  width: 100%;
+}
+#video {
+  width: 100%;
+  height: 95vh;
+  object-fit: cover;
+  z-index: -1;
+}
+.video_div {
+  margin-top: 68px;
+  position: relative;
+}
+.weird {
+  position: absolute;
+  left: 190px;
+  top: 70px;
+  font-family: "get_schwifty" !important;
+  color: purple;
+  font-size: 100px;
+  line-height: 110px;
+  opacity: 0.9;
+  text-align: center;
+  -webkit-text-stroke: 2px white;
+}
 
+#subtitle {
+  color: white;
+  position: absolute;
+  opacity: 0.9;
+  /* -webkit-text-stroke: 1px rgb(234, 236, 213); */
+  background-color: rgba(14, 14, 14, 0.25);
+  top: 550px;
+  left: 10px;
+  font-size: 2px;
+  width: 40%;
+  min-width: 20em;
+  max-width: 30em;
+  opacity: 0;
+  transition: all 350ms;
+  transition-delay: 330ms;
+  visibility: hidden;
+}
+.video_title_div {
+  position: absolute;
+  height: 100%;
+  width: 35%;
+}
+.hidden{
+  visibility: hidden;
+}
+.button {
+  width: 130px;
+  height: 45px;
+  text-align: justify;
+  position: absolute;
+  z-index: 1;
+  border-radius: 15%;
+  opacity: 0.9;
+  transition: all 150ms;
+}
+.oynat {
+  top: 440px;
+  left: 120px;
+}
+.button i {
+  margin: 8px;
+  font-size: 19px;
+}
+.button p {
+  position: inline-block;
+  display: inline-block;
+  margin: 8px;
+  font-size: 19px;
+}
+.bilgi {
+  top: 440px;
+  left: 290px;
+  width: 220px;
+  z-index: 1;
 
+  background-color: rgba(109, 109, 110, 0.7);
+}
+.bilgi i {
+  font-size: 22px;
+  color: whitesmoke;
+  margin-right: 6px;
+}
+.bilgi p {
+  color: whitesmoke;
+}
+.bilgi:hover {
+  background-color: rgba(109, 109, 110, 0.5);
+}
+.oynat:hover {
+  opacity: 0.8;
+}
+.bilgi:hover ~ p[id="subtitle"] {
+  visibility: visible !important;
+  opacity: 1 !important;
+  top: 500px !important ;
+  left: 60px !important;
+  font-size: 22px !important;
+}
 
+/* ALT  */
+.titles{
+
+margin-top: 20px;
+border: none;
+background-color: transparent;
+margin-left: 80px;
+z-index: 12;
+width: 290px;
+}
+.titles1{
+  color: white;
+font-size: 27px;
+font-weight: 700;
+}
+.see_all {
+  color: white;
+  display: fixed;
+  height: 30px;
+  margin-top: -25px;
+  width: 440px;
+  font-size: 14px;
+  margin-left: 0px;
+  z-index: -5;
+  visibility: hidden;
+  opacity: 0.2;
+  transition: all 500ms;
+}
+.see_all_short{
+  margin-left: -30px;
+}
+.titles:hover .see_all {
+  opacity: 1 !important;
+  margin-left: 100px !important;
+  visibility: visible;
+}
+.titles:hover .see_all_short {
+  opacity: 1 !important;
+  margin-left: 88px !important;
+  visibility: visible;
+}
+
+.kapakfotolari_div{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 10px 70px;
+}
+.img_divs{
+  width: 223px;
+  position:relative;
+  height: 445px;
+}
+.kapakfotolari{
+  width: 100%;
+  z-index: 1 ;
+  transition: all 500ms;
+  height: 100%;
+  position: absolute;
+}
+.kapakfotolari:hover{
+  width: 120%;
+  margin-left: -24px;
+  margin-top: -43px;
+  z-index: 21;
+  height: 120%;
+ 
+}
