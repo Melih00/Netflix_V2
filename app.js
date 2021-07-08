@@ -7,7 +7,7 @@ $(function () {
     },
     hide: {
         effect: "blind",
-      duration: 400,
+      duration: 401,
     },
   });
 
