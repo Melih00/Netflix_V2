@@ -574,3 +574,28 @@ main {
   z-index: 1234;
 
 }
+
+#onpc{
+  position: fixed;
+  top: 30px;
+  left: 5px;
+  visibility: hidden;
+  color: black;
+  padding: 5px auto;
+  opacity: 1;
+  font-size: 35px;
+  width: 100%;
+  background-color: white;
+  z-index: 33 ;
+}
+
+@media  (max-width: 1000px) {
+  main, main *,header,header *{
+    visibility: hidden !important;
+    opacity: 0 !important;
+  }
+  #onpc{
+    visibility: visible !important;
+    opacity: 1 !important;
+  }
+}
