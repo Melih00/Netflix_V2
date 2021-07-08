@@ -21,11 +21,11 @@ $(function () {
     autoOpen: false,
     show: {
       effect: "blind",
-      duration: 1000,
+      duration: 500,
     },
     hide: {
-      effect: "blind",
-      duration: 1000,
+        effect: "blind",
+      duration: 400,
     },
   });
 
