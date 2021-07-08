@@ -585,8 +585,10 @@ main {
   opacity: 1;
   font-size: 35px;
   width: 100%;
+  text-align: center;
   background-color: white;
   z-index: 33 ;
+
 }
 
 @media  (max-width: 1000px) {
