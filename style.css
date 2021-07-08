@@ -478,11 +478,12 @@ main {
 }
 
 .resim_ {
-  z-index: 30123123123123123123;
+  z-index: 304;
   position: absolute;
   bottom: 50px;
   transition: all 400ms;
   visibility: hidden;
+  
   opacity: 0;
 }
 .img_divs:hover .resim_p {
@@ -568,4 +569,8 @@ main {
     rgba(0, 0, 0, .7) 80%,
     rgba(0, 0, 0, .7)100%
   );
+}
+#dialog{
+  z-index: 1234;
+
 }

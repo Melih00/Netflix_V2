@@ -15,7 +15,14 @@
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Kirang+Haerang&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/3e12eff7ef.js" crossorigin="anonymous"></script>
-    <link rel="shortcut icon" href="./images/netflix_logo.png" type="image/x-icon" >
+    <link rel="shortcut icon" href="./images/netflix_logo.png" type="image/x-icon">
+
+
+
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="/resources/demos/style.css">
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 
 
 </head>
@@ -134,10 +141,11 @@
         </div>
     </header>
     <main>
+
         <div class="video_div">
             <div class="video_title_div">
                 <p class="weird">Rick <br> and <br> Morty</p>
-                <button class="button oynat">
+                <button class="button opener oynat">
                     <i class="fas fa-play"></i>
                     <p>Oynat</p>
                 </button>
@@ -158,7 +166,7 @@
 
 
             <div class="img_divs"><img class="kapakfotolari foto1" src="./images/kapakfoto_bilmemne_ailesi.png" alt="">
-                <div class="for_background resim_"></div><i title="Oynat" class="fas fa-play resim_oynat resim_"></i><i
+                <div class="for_background resim_"></div><i title="Oynat" class="fas fa-play opener resim_oynat resim_"></i><i
                     title="Bilgi" class="fas fa-plus resim_ resim_arti "></i>
                 <p class="resim_p resim_">Willoughby Ailesi</p>
                 <p class="resim_eslesme resim_">%88 eşleşme <span class="time">1 saat 45 dakika</span></p>
@@ -166,31 +174,31 @@
 
 
             <div class="img_divs"> <img class="kapakfotolari" src="./images/kapakfoto_2.png" alt="">
-                <div class="for_background resim_"></div><i title="Oynat" class="fas fa-play resim_oynat resim_"></i><i
+                <div class="for_background resim_"></div><i title="Oynat" class="fas fa-play opener resim_oynat resim_"></i><i
                     title="Bilgi" class="fas fa-plus resim_ resim_arti "></i>
                 <p class="resim_p resim_">Gelecek Jenerasyon</p>
                 <p class="resim_eslesme resim_">%76 eşleşme <span class="time">1 saat 56 dakika</span></p>
             </div>
             <div class="img_divs"><img class="kapakfotolari" src="./images/kapakfoto_babyboss.png" alt="">
-                <div class="for_background resim_"></div><i title="Oynat" class="fas fa-play resim_oynat resim_"></i><i
+                <div class="for_background resim_"></div><i title="Oynat" class="fas fa-play opener resim_oynat resim_"></i><i
                     title="Bilgi" class="fas fa-plus resim_ resim_arti "></i>
                 <p class="resim_p resim_">Patron Bebek</p>
                 <p class="resim_eslesme resim_">%85 eşleşme <span class="time">1 saat 65 dakika</span></p>
             </div>
             <div class="img_divs"><img class="kapakfotolari" src="./images/kapakfoto_peakyblinders.png" alt="">
-                <div class="for_background resim_"></div><i title="Oynat" class="fas fa-play resim_oynat resim_"></i><i
+                <div class="for_background resim_"></div><i title="Oynat" class="fas fa-play opener resim_oynat resim_"></i><i
                     title="Bilgi" class="fas fa-plus resim_ resim_arti "></i>
                 <p class="resim_p resim_">Peaky Blinders</p>
                 <p class="resim_eslesme resim_">%99 eşleşme <span class="time">5 sezon</span></p>
             </div>
             <div class="img_divs"> <img class="kapakfotolari" src="./images/kapakfoto_st.png" alt="">
-                <div class="for_background resim_"></div><i title="Oynat" class="fas fa-play resim_oynat resim_"></i><i
+                <div class="for_background resim_"></div><i title="Oynat" class="fas fa-play opener resim_oynat resim_"></i><i
                     title="Bilgi" class="fas fa-plus resim_ resim_arti "></i>
                 <p class="resim_p resim_">Stranger Things</p>
                 <p class="resim_eslesme resim_">%91 eşleşme <span class="time">4 Sezon</span></p>
             </div>
             <div class="img_divs"><img class="kapakfotolari" src="./images/kapakfoto_lucifer.png" alt="">
-                <div class="for_background resim_"></div><i title="Oynat" class="fas fa-play resim_oynat resim_"></i><i
+                <div class="for_background resim_"></div><i title="Oynat" class="fas fa-play opener resim_oynat resim_"></i><i
                     title="Bilgi" class="fas fa-plus resim_ resim_arti "></i>
                 <p class="resim_p resim_">Lucifer</p>
                 <p class="resim_eslesme resim_">%82 eşleşme <span class="time">5 Sezon</span></p>
@@ -202,7 +210,7 @@
         <div class="kapakfotolari_div">
 
             <div class="img_divs"><img class="kapakfotolari" src="./images/kapakfoto_arrow.jpg" alt="">
-                <div class="for_background resim_"></div><i title="Oynat" class="fas fa-play resim_oynat resim_"></i><i
+                <div class="for_background resim_"></div><i title="Oynat" class="fas fa-play opener resim_oynat resim_"></i><i
                     title="Bilgi" class="fas fa-plus resim_ resim_arti "></i>
                 <p class="resim_p resim_">Arrow</p>
                 <p class="resim_eslesme resim_">%81 eşleşme <span class="time">3 Sezon</span></p>
@@ -210,31 +218,31 @@
 
 
             <div class="img_divs"> <img class="kapakfotolari" src="./images/kapakfoto_sihirli.png" alt="">
-                <div class="for_background resim_"></div><i title="Oynat" class="fas fa-play resim_oynat resim_"></i><i
+                <div class="for_background resim_"></div><i title="Oynat" class="fas fa-play opener resim_oynat resim_"></i><i
                     title="Bilgi" class="fas fa-plus resim_ resim_arti "></i>
                 <p class="resim_p resim_">Sihirli Ejder</p>
                 <p class="resim_eslesme resim_">%71 eşleşme <span class="time">1 saat 41 dakika</span></p>
             </div>
             <div class="img_divs"><img class="kapakfotolari" src="./images/kapakfoto_lupin.png" alt="">
-                <div class="for_background resim_"></div><i title="Oynat" class="fas fa-play resim_oynat resim_"></i><i
+                <div class="for_background resim_"></div><i title="Oynat" class="fas fa-play opener resim_oynat resim_"></i><i
                     title="Bilgi" class="fas fa-plus resim_ resim_arti "></i>
                 <p class="resim_p resim_">Lupin</p>
                 <p class="resim_eslesme resim_">%88 eşleşme <span class="time">4 Sezon</span></p>
             </div>
             <div class="img_divs"><img class="kapakfotolari" src="./images/kapakfoto_olulerordusu.png" alt="">
-                <div class="for_background resim_"></div><i title="Oynat" class="fas fa-play resim_oynat resim_"></i><i
+                <div class="for_background resim_"></div><i title="Oynat" class="fas fa-play opener resim_oynat resim_"></i><i
                     title="Bilgi" class="fas fa-plus resim_ resim_arti "></i>
                 <p class="resim_p resim_">Ölüler Ordusu</p>
                 <p class="resim_eslesme resim_">%92 eşleşme <span class="time">2 saat 5 dakika</span></p>
             </div>
             <div class="img_divs"><img class="kapakfotolari" src="./images/kapakfoto_sungerbob.png" alt="">
-                <div class="for_background resim_"></div><i title="Oynat" class="fas fa-play resim_oynat resim_"></i><i
+                <div class="for_background resim_"></div><i title="Oynat" class="fas fa-play opener resim_oynat resim_"></i><i
                     title="Bilgi" class="fas fa-plus resim_ resim_arti "></i>
                 <p class="resim_p resim_">Sünger Bob</p>
                 <p class="resim_eslesme resim_">%85 eşleşme <span class="time">1 saat 54 dakika</span></p>
             </div>
             <div class="img_divs"> <img class="kapakfotolari" src="./images/kapakfoto_cadilar.png" alt="">
-                <div class="for_background resim_"></div><i title="Oynat" class="fas fa-play resim_oynat resim_"></i><i
+                <div class="for_background resim_"></div><i title="Oynat" class="fas fa-play opener resim_oynat resim_"></i><i
                     title="Bilgi" class="fas fa-plus resim_ resim_arti "></i>
                 <p class="resim_p resim_">Cadılar Okulu</p>
                 <p class="resim_eslesme resim_">%93 eşleşme <span class="time">2 Sezon</span></p>
@@ -246,30 +254,42 @@
         </button>
         <div class="kapakfotolari_div">
 
-            <div class="img_divs"> <img class="kapakfotolari" src="./images/kapakfoto_himym.png" alt=""> <div class="for_background resim_"></div><i title="Oynat" class="fas fa-play resim_oynat resim_"></i><i
-            title="Bilgi" class="fas fa-plus resim_ resim_arti "></i>
-        <p class="resim_p resim_">How I Met Your Mother</p>
-        <p class="resim_eslesme resim_">%96 eşleşme <span class="time">9 Sezon</span></p></div>
-            <div class="img_divs"><img class="kapakfotolari foto1" src="./images/kapakfoto_fearless.png" alt=""><div class="for_background resim_"></div><i title="Oynat" class="fas fa-play resim_oynat resim_"></i><i
-            title="Bilgi" class="fas fa-plus resim_ resim_arti "></i>
-        <p class="resim_p resim_">Fearless</p>
-        <p class="resim_eslesme resim_">%84 eşleşme <span class="time">1 saat 39 dakika</span></p></div>
-            <div class="img_divs"><img class="kapakfotolari" src="./images/kapakfoto_cukur.png" alt=""><div class="for_background resim_"></div><i title="Oynat" class="fas fa-play resim_oynat resim_"></i><i
-            title="Bilgi" class="fas fa-plus resim_ resim_arti "></i>
-        <p class="resim_p resim_">Çukur</p>
-        <p class="resim_eslesme resim_">%85 eşleşme <span class="time">5 Sezon</span></p></div>
-            <div class="img_divs"><img class="kapakfotolari" src="./images/kapakfoto_atiye.png" alt=""><div class="for_background resim_"></div><i title="Oynat" class="fas fa-play resim_oynat resim_"></i><i
-            title="Bilgi" class="fas fa-plus resim_ resim_arti "></i>
-        <p class="resim_p resim_">Atiye</p>
-        <p class="resim_eslesme resim_">%81 eşleşme <span class="time">3 Sezon</span></p></div>
-            <div class="img_divs"> <img class="kapakfotolari" src="./images/kapakfoto_doctorwho.png" alt=""><div class="for_background resim_"></div><i title="Oynat" class="fas fa-play resim_oynat resim_"></i><i
-            title="Bilgi" class="fas fa-plus resim_ resim_arti "></i>
-        <p class="resim_p resim_">Doctor Who</p>
-        <p class="resim_eslesme resim_">%89 eşleşme <span class="time">6 Sezon</span></p></div>
-            <div class="img_divs"><img class="kapakfotolari" src="./images/kapakfoto_ask101.png" alt=""><div class="for_background resim_"></div><i title="Oynat" class="fas fa-play resim_oynat resim_"></i><i
-            title="Bilgi" class="fas fa-plus resim_ resim_arti "></i>
-        <p class="resim_p resim_">Aşk 101</p>
-        <p class="resim_eslesme resim_">%92 eşleşme <span class="time">2 Sezon</span></p></div>
+            <div class="img_divs"> <img class="kapakfotolari" src="./images/kapakfoto_himym.png" alt="">
+                <div class="for_background resim_"></div><i title="Oynat" class="fas fa-play opener resim_oynat resim_"></i><i
+                    title="Bilgi" class="fas fa-plus resim_ resim_arti "></i>
+                <p class="resim_p resim_">How I Met Your Mother</p>
+                <p class="resim_eslesme resim_">%96 eşleşme <span class="time">9 Sezon</span></p>
+            </div>
+            <div class="img_divs"><img class="kapakfotolari foto1" src="./images/kapakfoto_fearless.png" alt="">
+                <div class="for_background resim_"></div><i title="Oynat" class="fas fa-play opener resim_oynat resim_"></i><i
+                    title="Bilgi" class="fas fa-plus resim_ resim_arti "></i>
+                <p class="resim_p resim_">Fearless</p>
+                <p class="resim_eslesme resim_">%84 eşleşme <span class="time">1 saat 39 dakika</span></p>
+            </div>
+            <div class="img_divs"><img class="kapakfotolari" src="./images/kapakfoto_cukur.png" alt="">
+                <div class="for_background resim_"></div><i title="Oynat" class="fas fa-play opener resim_oynat resim_"></i><i
+                    title="Bilgi" class="fas fa-plus resim_ resim_arti "></i>
+                <p class="resim_p resim_">Çukur</p>
+                <p class="resim_eslesme resim_">%85 eşleşme <span class="time">5 Sezon</span></p>
+            </div>
+            <div class="img_divs"><img class="kapakfotolari" src="./images/kapakfoto_atiye.png" alt="">
+                <div class="for_background resim_"></div><i title="Oynat" class="fas fa-play opener resim_oynat resim_"></i><i
+                    title="Bilgi" class="fas fa-plus resim_ resim_arti "></i>
+                <p class="resim_p resim_">Atiye</p>
+                <p class="resim_eslesme resim_">%81 eşleşme <span class="time">3 Sezon</span></p>
+            </div>
+            <div class="img_divs"> <img class="kapakfotolari" src="./images/kapakfoto_doctorwho.png" alt="">
+                <div class="for_background resim_"></div><i title="Oynat" class="fas fa-play opener resim_oynat resim_"></i><i
+                    title="Bilgi" class="fas fa-plus resim_ resim_arti "></i>
+                <p class="resim_p resim_">Doctor Who</p>
+                <p class="resim_eslesme resim_">%89 eşleşme <span class="time">6 Sezon</span></p>
+            </div>
+            <div class="img_divs"><img class="kapakfotolari" src="./images/kapakfoto_ask101.png" alt="">
+                <div class="for_background resim_"></div><i title="Oynat" class="fas fa-play opener resim_oynat resim_"></i><i
+                    title="Bilgi" class="fas fa-plus resim_ resim_arti "></i>
+                <p class="resim_p resim_">Aşk 101</p>
+                <p class="resim_eslesme resim_">%92 eşleşme <span class="time">2 Sezon</span></p>
+            </div>
         </div>
         </div><br><br><button class="titles">
             <p class="titles1">En İyi İçerikler</p>
@@ -277,32 +297,53 @@
         </button>
         <div class="kapakfotolari_div">
 
-            <div class="img_divs"><img class="kapakfotolari foto1" src="./images/kapakfoto_bm.png" alt=""><div class="for_background resim_"></div><i title="Oynat" class="fas fa-play resim_oynat resim_"></i><i
-            title="Bilgi" class="fas fa-plus resim_ resim_arti "></i>
-        <p class="resim_p resim_">Black Mirror</p>
-        <p class="resim_eslesme resim_">%88 eşleşme <span class="time">5 Sezon</span></p></div>
-            <div class="img_divs"><img class="kapakfotolari" src="./images/kapakfoto_trol.png" alt=""><div class="for_background resim_"></div><i title="Oynat" class="fas fa-play resim_oynat resim_"></i><i
-            title="Bilgi" class="fas fa-plus resim_ resim_arti "></i>
-        <p class="resim_p resim_">Trol Avcılar</p>
-        <p class="resim_eslesme resim_">%81 eşleşme <span class="time">1 Sezon</span></p></div>
-            <div class="img_divs"><img class="kapakfotolari" src="./images/kapakfoto_vikinks.jpg" alt=""><div class="for_background resim_"></div><i title="Oynat" class="fas fa-play resim_oynat resim_"></i><i
-            title="Bilgi" class="fas fa-plus resim_ resim_arti "></i>
-        <p class="resim_p resim_">Vikings</p>
-        <p class="resim_eslesme resim_">%95 eşleşme <span class="time">6 Sezon</span></p></div>
-            <div class="img_divs"> <img class="kapakfotolari" src="./images/kapakfoto_countdown.png" alt=""><div class="for_background resim_"></div><i title="Oynat" class="fas fa-play resim_oynat resim_"></i><i
-            title="Bilgi" class="fas fa-plus resim_ resim_arti "></i>
-        <p class="resim_p resim_">Countdown</p>
-        <p class="resim_eslesme resim_">%87 eşleşme <span class="time">1 saat 56 dakika</span></p></div>
-            <div class="img_divs"><img class="kapakfotolari" src="./images/kapakfoto_bunebe.png" alt=""><div class="for_background resim_"></div><i title="Oynat" class="fas fa-play resim_oynat resim_"></i><i
-            title="Bilgi" class="fas fa-plus resim_ resim_arti "></i>
-        <p class="resim_p resim_">Raising Dion</p>
-        <p class="resim_eslesme resim_">%72 eşleşme <span class="time">4 Sezon</span></p></div>
-            <div class="img_divs"> <img class="kapakfotolari" src="./images/kapakfoto_klaues.png" alt=""><div class="for_background resim_"></div><i title="Oynat" class="fas fa-play resim_oynat resim_"></i><i
-            title="Bilgi" class="fas fa-plus resim_ resim_arti "></i>
-        <p class="resim_p resim_">Klaus</p>
-        <p class="resim_eslesme resim_">%79 eşleşme <span class="time">1 saat 45 dakika</span></p></div>
+            <div class="img_divs"><img class="kapakfotolari foto1" src="./images/kapakfoto_bm.png" alt="">
+                <div class="for_background resim_"></div><i title="Oynat" class="fas fa-play opener resim_oynat resim_"></i><i
+                    title="Bilgi" class="fas fa-plus resim_ resim_arti "></i>
+                <p class="resim_p resim_">Black Mirror</p>
+                <p class="resim_eslesme resim_">%88 eşleşme <span class="time">5 Sezon</span></p>
+            </div>
+            <div class="img_divs"><img class="kapakfotolari" src="./images/kapakfoto_trol.png" alt="">
+                <div class="for_background resim_"></div><i title="Oynat" class="fas fa-play opener resim_oynat resim_"></i><i
+                    title="Bilgi" class="fas fa-plus resim_ resim_arti "></i>
+                <p class="resim_p resim_">Trol Avcılar</p>
+                <p class="resim_eslesme resim_">%81 eşleşme <span class="time">1 Sezon</span></p>
+            </div>
+            <div class="img_divs"><img class="kapakfotolari" src="./images/kapakfoto_vikinks.jpg" alt="">
+                <div class="for_background resim_"></div><i title="Oynat" class="fas fa-play opener resim_oynat resim_"></i><i
+                    title="Bilgi" class="fas fa-plus resim_ resim_arti "></i>
+                <p class="resim_p resim_">Vikings</p>
+                <p class="resim_eslesme resim_">%95 eşleşme <span class="time">6 Sezon</span></p>
+            </div>
+            <div class="img_divs"> <img class="kapakfotolari" src="./images/kapakfoto_countdown.png" alt="">
+                <div class="for_background resim_"></div><i title="Oynat" class="fas fa-play opener resim_oynat resim_"></i><i
+                    title="Bilgi" class="fas fa-plus resim_ resim_arti "></i>
+                <p class="resim_p resim_">Countdown</p>
+                <p class="resim_eslesme resim_">%87 eşleşme <span class="time">1 saat 56 dakika</span></p>
+            </div>
+            <div class="img_divs"><img class="kapakfotolari" src="./images/kapakfoto_bunebe.png" alt="">
+                <div class="for_background resim_"></div><i title="Oynat" class="fas fa-play opener resim_oynat resim_"></i><i
+                    title="Bilgi" class="fas fa-plus resim_ resim_arti "></i>
+                <p class="resim_p resim_">Raising Dion</p>
+                <p class="resim_eslesme resim_">%72 eşleşme <span class="time">4 Sezon</span></p>
+            </div>
+            <div class="img_divs"> <img class="kapakfotolari" src="./images/kapakfoto_klaues.png" alt="">
+                <div class="for_background resim_"></div><i title="Oynat" class="fas fa-play opener resim_oynat resim_"></i><i
+                    title="Bilgi" class="fas fa-plus resim_ resim_arti "></i>
+                <p class="resim_p resim_">Klaus</p>
+                <p class="resim_eslesme resim_">%79 eşleşme <span class="time">1 saat 45 dakika</span></p>
+            </div>
         </div>
     </main>
+
+
+    <div id="dialog" title="Yetki Gerekli">
+        <p>Bu içeriği şu anda görüntüleme izniniz yok. <br>
+            Detaylı bilgi için <a href="https://bit.ly/3e0BNqi">tıklayınız</a>.</p>
+    </div>
+
+
+    <script src="app.js"></script>
 </body>
 
 </html>
